@@ -55,6 +55,8 @@ export default class CustomComponent extends Components.components.field {
     // console.log({ value })
     return super.render(this.renderTemplate('customcomponent', {
       setValue: this.setValue.bind(this),
+      addressSearch: () => fetch('https://jsonplaceholder.typicode.com/todos/1')
+        .then(response => response.json())
       // value
     }));
   }

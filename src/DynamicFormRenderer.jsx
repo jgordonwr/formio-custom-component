@@ -10,7 +10,10 @@ export class DynamicFormRenderer extends PureComponent {
     render() {
         return (
             <div className="dynamic-form-renderer">
-                <Form src={"https://dynamic-form-manager.wremittst.com/wr-tst/customcomponenttest"} />
+                <Form
+                    src={"https://dynamic-form-manager.wremittst.com/wr-tst/customcomponenttest"}
+                    onSubmit={console.log}
+                />
             </div>
         );
     }
