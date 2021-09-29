@@ -10,7 +10,9 @@ const dummyProps = {
     group: { fields: [] },
     lookupResult: { isContainer: false, addresses: [] },
 }
+
 const form = ctx => {
+    console.log({ dummyProps })
     let id = `root=${ctx.id}`;
     id += ctx.builder ? 'builder' : 'preview';
 
